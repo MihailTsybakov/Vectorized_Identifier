@@ -5,8 +5,8 @@ int main()
 {
 	vector_ident VI;
 	
-	mnist_reader mr_train("C:\\Users\\mihai\\Desktop\\progy\\C & C++\\Digits_Identifier\\Data", "train_labels.txt", "train-images.idx3-ubyte");
-	mnist_reader mr_test("C:\\Users\\mihai\\Desktop\\progy\\C & C++\\Digits_Identifier\\Data", "test_labels.txt", "t10k-images.idx3-ubyte");
+	mnist_reader mr_train("Data", "train_labels.txt", "train-images.idx3-ubyte");
+	mnist_reader mr_test("Data", "test_labels.txt", "t10k-images.idx3-ubyte");
 
 	std::vector<digit_container> train_imgs, test_imgs;
 	std::vector<int> train_labels, test_labels;
